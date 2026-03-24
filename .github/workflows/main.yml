@@ -1,5 +1,10 @@
 name: CI Pipeline
-on: [push]
+on: 
+workflow_dispatch:
+inputs:
+name:
+  description: 'Your name'
+  required: true
 
 jobs: 
   build: 
