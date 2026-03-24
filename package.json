@@ -14,6 +14,7 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist"
+    
   },
   "author": "Rysaev Damir <freepad@ya.ru>",
   "license": "MIT",

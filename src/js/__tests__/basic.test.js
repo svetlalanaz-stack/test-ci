@@ -5,9 +5,11 @@ const dataList = [
   { name: "НеМаг", health: 40 },
   { name: "Нежить", health: 10 },
 ];
-const handler = test.each(dataList);
-handler("prefix %s ah %s", (health) => {
-  const result = healthColor(health);
 
+test.each(dataList)("проверка здоровья для $name", function(item) {
+  const result = healthColor(item);
   expect(result).toBeDefined();
 });
+
+
+
